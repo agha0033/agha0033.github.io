@@ -11,19 +11,17 @@ body{
     margin: 0 auto;
     padding: 1rem;
 }
-/*max-widths prevents the value from becoming larger than the given number*/
-/*margin creates a space around elements outside of any defiend borders*/
 .list{
-    max-width: 90vw;
-    margin: 0 auto;
+    max-width: 90vw; /*max-widths prevents the value from becoming larger than the given number*/
+    margin: 0 auto; /*margin creates a space around elements outside of any defiend borders*/
 }
 
 header{
     background-color: #ffffff;
-    color: #ffffff; /* Changed from #FFF to #000 for better contrast */
+    color: #ffffff; 
     padding: 10rem 0; /*used to add space between content and its corresponding border*/
     text-align: center; /*to set horizontal alignment of a text*/
-    background-image: url(../images/lone-starfish-wide.jpg); /*trgeting the image*/
+    background-image: url(../images/lone-starfish-wide.jpg); /*targeting the image*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -53,7 +51,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #000; /* Changed to a consistent text color */
+    color: #000; 
     padding: 1rem;
     font-size: 1.2rem;
     text-decoration: none;
@@ -70,9 +68,9 @@ nav ul li a:hover{
 
 img{
     width: 200px;
-    float: left; /*controls the positioning and formatting of content on the page.(example:wrap text around image)*/
+    float: left; /*controls the positioning and formatting of content on the page.(example: wrap text around image)*/
 }
-/*figure is for grouping the images, illustrations, diagrams, etc with their captions. good for organizing and styling*/
+/*figure is for grouping the images, illustrations, diagrams, etc... with their captions. good for organizing and styling*/
 figure img{
     width: 100%;
     height: auto;
@@ -82,7 +80,7 @@ figure img{
 .testFloat{
     width: 200px;
     float: left;
-    padding-right: 10px; /*creats spce between the right edge of an element's content an dits border*/
+    padding-right: 10px; /*creats space between the right edge of an element's content an its border*/
 }
 
 h2, h3, p{
