@@ -10,6 +10,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    font-size: 19px;
 }
 .list{
     max-width: 90vw; /*max-widths prevents the value from becoming larger than the given number*/
