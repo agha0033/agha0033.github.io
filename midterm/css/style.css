@@ -1,10 +1,10 @@
-html {
+html{
     background-color: #aad4cf; /*for a background color*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*choosing a font style*/
     align-items: center; /*specifies the alignment of items*/
 }
 
-body {
+body{
     background-color: #d6f3f0;
     width: 90%;
     max-width: 1200px;
@@ -13,12 +13,12 @@ body {
 }
 /*max-widths prevents the value from becoming larger than the given number*/
 /*margin creates a space around elements outside of any defiend borders*/
-.list {
+.list{
     max-width: 90vw;
     margin: 0 auto;
 }
 
-header {
+header{
     background-color: #ffffff;
     color: #ffffff; /* Changed from #FFF to #000 for better contrast */
     padding: 10rem 0; /*used to add space between content and its corresponding border*/
@@ -30,7 +30,7 @@ header {
     font-size: 10px;
 }
 
-h1 {
+h1{
     font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -39,57 +39,57 @@ h1 {
     align-items: center;
 }
 
-nav ul {
+nav ul{
     list-style: none;
     padding: 0.7rem 0;
     text-transform: uppercase;
     text-align: center;
 }
 
-nav ul li {
+nav ul li{
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-nav ul li a {
+nav ul li a{
     color: #000; /* Changed to a consistent text color */
     padding: 1rem;
     font-size: 1.2rem;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+nav ul li a:hover{
     background-color: #88aaa6;
     color: #000;
 }
 
-.container {
+.container{
     margin: 0;
 }
 
-img {
+img{
     width: 200px;
     float: left; /*controls the positioning and formatting of content on the page.(example:wrap text around image)*/
 }
 /*figure is for grouping the images, illustrations, diagrams, etc with their captions. good for organizing and styling*/
-figure img {
+figure img{
     width: 100%;
     height: auto;
     display: block;
 }
 
-.testFloat {
+.testFloat{
     width: 200px;
     float: left;
     padding-right: 10px; /*creats spce between the right edge of an element's content an dits border*/
 }
 
-h2, h3, p {
+h2, h3, p{
     color: #000000;
 }
 
-.styled-fieldset {
+.styled-fieldset{
     border: 1px solid #000000; /* border color */ /*border is for separating elements*/
     padding: 20px; /* padding inside the fieldset */
     border-radius: 0px; /* creates rounded corners on elements. the lower the number the sharper the corners */
@@ -137,6 +137,6 @@ input{
 #submit-button:hover{
     background-color: #88aaa6;
 }
-footer {
+footer{
     text-align: right; /*places the content on the right side of the page*/
 }
