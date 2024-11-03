@@ -1,7 +1,7 @@
 html {
-    background-color: #aad4cf;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    align-items: center;
+    background-color: #aad4cf; /*for a background color*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /*choosing a font style*/
+    align-items: center; /*specifies the alignment of items*/
 }
 
 body {
@@ -11,7 +11,8 @@ body {
     margin: 0 auto;
     padding: 1rem;
 }
-
+/*max-widths prevents the value from becoming larger than the given number*/
+/*margin creates a space around elements outside of any defiend borders*/
 .list {
     max-width: 90vw;
     margin: 0 auto;
@@ -20,9 +21,9 @@ body {
 header {
     background-color: #ffffff;
     color: #ffffff; /* Changed from #FFF to #000 for better contrast */
-    padding: 10rem 0;
-    text-align: center;
-    background-image: url(../images/lone-starfish-wide.jpg);
+    padding: 10rem 0; /*used to add space between content and its corresponding border*/
+    text-align: center; /*to set horizontal alignment of a text*/
+    background-image: url(../images/lone-starfish-wide.jpg); /*trgeting the image*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,8 +34,8 @@ h1 {
     font-size: 2rem;
     text-transform: uppercase;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    display: inline-flex;
-    justify-content: center;
+    display: inline-flex; /*used for specifying how an element is shown on a webpage*/
+    justify-content: center; /*we use this to align the content along the main flex container*/
     align-items: center;
 }
 
@@ -69,9 +70,9 @@ nav ul li a:hover {
 
 img {
     width: 200px;
-    float: left;
+    float: left; /*controls the positioning and formatting of content on the page.(example:wrap text around image)*/
 }
-
+/*figure is for grouping the images, illustrations, diagrams, etc with their captions. good for organizing and styling*/
 figure img {
     width: 100%;
     height: auto;
@@ -81,7 +82,7 @@ figure img {
 .testFloat {
     width: 200px;
     float: left;
-    padding-right: 10px;
+    padding-right: 10px; /*creats spce between the right edge of an element's content an dits border*/
 }
 
 h2, h3, p {
@@ -89,28 +90,28 @@ h2, h3, p {
 }
 
 .styled-fieldset {
-    border: 1px solid #000000; /* Border color */
-    padding: 20px; /* Padding inside the fieldset */
-    border-radius: 0px; /* The lower the number the sharper the corners */
+    border: 1px solid #000000; /* border color */ /*border is for separating elements*/
+    padding: 20px; /* padding inside the fieldset */
+    border-radius: 0px; /* creates rounded corners on elements. the lower the number the sharper the corners */
 }
 
-input {
+input{
     width: 100%;
     padding: 12px 20px; 
     margin: 8px 0;
     display: inline-block; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
-    box-sizing: border-box;
+    box-sizing: border-box; /*contorls the calculation of an element's width and height, padding and borders.*/
 }
 #message{
-    width: 92%;
+    width: 100%;
     height: 5em;
     padding: 14px 20px;
 }
 .radio-group{
     display: inline-flex;
-    gap: 8px;
+    gap: 8px; /*controls the space between the radio buttons*/
 }
 
 .radio-group label{
@@ -120,9 +121,10 @@ input {
 
 #submit-button{
     display: flex;
-    margin-top: 5px;
+    margin-top: 5px; /*to create space above the element*/
 
 }
+/*to style the button*/
 #submit-button{
     padding: 10px 20px;
     color: black;
@@ -136,5 +138,5 @@ input {
     background-color: #88aaa6;
 }
 footer {
-    text-align: right;
+    text-align: right; /*places the content on the right side of the page*/
 }

@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mid Term</title>
+    <!--Without the href attribute the element will not work -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!--Class allows you to group elements together and add styles on CSS to them-->
     <div class="list">
         <header>
+            <!--id is for indentifying a specific element on a web page and is used for linking anchor links or point a style innto a style sheet--> 
             <section id="home">
+                <!--its recommended to not have more than 6 headings(h6)-->
                 <h1>Lone Starfish</h1>
             </section>
         </header>
+        <!--For creating navigation menus by defining a set of links we use navigation-->
         <nav>
+            <!--ul for unordered list and ol for ordered list-->
             <ul>
+                <!--li represents an item in a list-->
+                <!--href is used here so when we tap on the itrms it guides us to there-->
                 <li><a href="#home">Home</a></li>
                 <li>|</li>
                 <li><a href="#story">Story</a></li>
@@ -22,12 +30,19 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!--main represents the main content of the page-->
         <main>
+            <!--section is used to devide a web page into standalone sections that are all related-->
             <section id="story">
+                <!--the higher the header numbers are the smaller they will get-->
                 <h2>Life of a Starfish</h2>
+                <!--we use (div) and inside it (class) to group other html elements together nd apply styles to them on css-->
                 <div class="container">
+                    <!--we put (src) inside a (img) tag to provide the address/path of our image-->
+                    <!--we use (alt) to provide an information of a photo when you hover over it it gives you the info and screen-readers will read that as well-->
                     <img src="./images/lone-starfish.jpg" alt="photo of a Starfish" class="testFloat">
-                    <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p><br><br>
+                    <!--(p) represents a paragraph-->
+                    <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p><br><br> <!--(br) element is for moving texts to a new line-->
                 </div>
             </section>
             <h3>Facts About Starfish</h3>
@@ -42,33 +57,42 @@
             <div class="box">
                 <section id="contact">
                     <h3>Contact to learn more</h3>
+                    <!--we use (fieldset to group related elements in a form, this tag draws a box around these elements)-->
                     <fieldset class="styled-fieldset">
+                        <!--(form) is one of those small boxes that collects information from visitos-->
                         <form action="index.html" method="post">
+                            <!--(label) is for creating a caption for a form contorl. useful for screen-reader users because it will read it the label out loud-->
                             <label for="fullname">Your Name</label><br>
+                            <!--(input)allows the user to put information in a form-->
                             <input id="fullname" type="text" name="Your Name" required><br>
 
                             <label for="email">Your Email</label><br>
                             <input id="email" type="email" name="Your Email" required><br>
 
                             <label for="message">Your Message</label><br>
+                            <!--a textarea holds an unlimited number of characters-->
                             <textarea id="message" name="Your Message" required></textarea><br>
 
                             <h4>Would you like to visit the starfish?</h4>
                             <div class="radio-group">
                                 <label for="yes">Yes</label>
+                                <!--(radio) is a button. allows users to select one option from a group of choices-->
                                 <input type="radio" id="yes" name="starfish" value="yes">
                                 <label for="no">No</label>
                                 <input type="radio" id="no" name="starfish" value="no">
                                 <label for="maybe">Maybe</label>
                                 <input type="radio" id="maybe" name="starfish" value="maybe"><br>
                             </div>
+                            <!--(button0 is for sendind/submitting a form or opening/closing something)-->
                             <button id="submit-button" type="submit">Send</button>
                         </form>
                     </fieldset>
                 </section>
             </div>
         </main>
+        <!--(footer) usually contains information about the author of the section, copyright data or links-->
         <footer>
+            <!--to add a copy right symbol to a web page we use (&copy)-->
             <p>&copy; Lone Starfish.</p>
         </footer>
     </div>
