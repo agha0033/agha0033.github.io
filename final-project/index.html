@@ -89,17 +89,19 @@
                 <button>Learn More<i class="fa-solid fa-right-long"></i></button>
             </div>
         </section>
-        <section id="team">
-            <h2>Our Team</h2>
-            <img src="./images/john.jpg" alt="image of John">
-            <h3>John Doe</h3>
-            <h4>CEO and Co-owner</h4><hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic voluptates in, quasi cum enim praesentium nisi, qui facere beatae corporis? Neque soluta quasi ipsam velit saepe esse, omnis sapiente?</p>
-            <img src="./images/bob.jpg" alt="image of Bob">
-            <h3>Bob Rite</h3>
-            <h4>CFO and Co-owner</h4><hr> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquam voluptatum temporibus! Et qui iusto dolorem explicabo, aperiam dignissimos repellat quibusdam reiciendis. Doloremque id animi blanditiis sint, dolorum et voluptates.</p>
-        </section>
+        <div class="teaminfo">
+            <section id="team">
+                <h2>Our Team</h2>
+                <img src="./images/john.jpg" alt="image of John">
+                <h3>John Doe</h3>
+                <h4>CEO and Co-owner</h4><hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic voluptates in, quasi cum enim praesentium nisi, qui facere beatae corporis? Neque soluta quasi ipsam velit saepe esse, omnis sapiente?</p>
+                <img src="./images/bob.jpg" alt="image of Bob">
+                <h3>Bob Rite</h3>
+                <h4>CFO and Co-owner</h4><hr> 
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquam voluptatum temporibus! Et qui iusto dolorem explicabo, aperiam dignissimos repellat quibusdam reiciendis. Doloremque id animi blanditiis sint, dolorum et voluptates.</p>
+            </section>
+        </div>
         <section id="contact">
             <h1>Contact Us</h1>
             <h2>Send us a message</h2>
@@ -112,13 +114,18 @@
                 <textarea id="message" name="Your Message" required></textarea><br>
                 <button type="submit">Send</button>
             </form>
-            <h1>Hours of Operation</h1>
+            <div class="table">
+                <h1>Hours of Operation</h1>
+            <!--table defines a table structure-->
             <table>
+                <!--tr defines a table row-->
                 <tr>
+                    <!--th is our table header cell-->
                     <th>Days</th>
                     <th>Hours</th>
                 </tr>
                 <tr>
+                    <!--td is our table data cell-->
                     <td>Monday - Friday</td>
                     <td>9 AM - 6 PM</td>
                 </tr>
@@ -127,6 +134,7 @@
                     <td>Closed</td>
                 </tr>
             </table>
+            </div>
             <h1>Location</h1>
             <!--iframe is for when we want to add the gogole maps url and showcase a-->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.897688710392!2d-75.75974656511231!3d45.34984490000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732125550795!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -136,6 +144,7 @@
         <!--&copy; for creating the copy right icon-->
         <p>&copy; Copyright Three Star Media, 2024
         <br> All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+        <!--the a will help us have a link on the word by using href and putting the url in there-->
     </footer>
     <!--java script icons go before the ending of the body tag and help making the icons appear-->
     <script src="https://kit.fontawesome.com/faefe823ea.js" crossorigin="anonymous"></script> 
