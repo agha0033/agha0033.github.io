@@ -1,6 +1,5 @@
 html{
     background-color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* align-items: center; */
     box-sizing: border-box;
     margin: 0 auto;
@@ -10,6 +9,11 @@ body{
     display: flex;
     line-height: 1.5;
     align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 19px;
 }
 header{
     background-color: #222;
@@ -48,12 +52,12 @@ ul{
     color: #c78c06;
     background-color: #222;
     border: #c78c06 solid 1.5px;
-    padding: px 1px;
+    padding: 4px 5px;
 }
 .banner-text{
     content:'';
     position: absolute;
-    width: 100%;
+    width: 85%;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.5);;
     padding: 20px;
@@ -83,15 +87,14 @@ ul{
     cursor: pointer;
     margin-top: 20px;
 }
-#home button:hover {
+.banner button:hover {
     background-color: #222;
     color: #c78c06;
 }
 h1{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
-    z-index: 2;
 }
 h2{
     font-size: 2rem;
@@ -106,9 +109,10 @@ h3{
     background-color: #ffe6ac;
     align-content: center;
     margin-bottom: 25px;
+    font-size: 15px;
 }
 .about{
-    align-content: center;
+    align-content: left;
 }
 .image1{
     width: 100%;
@@ -310,6 +314,62 @@ input{
     padding: 3px 1px;
     border: none;
 }
+/* Contact Us Section Styling */
+#contact h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#contact h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px; /* Restrict the width of the form */
+    margin: 0 auto; /* Center the form */
+    font-family: Arial, sans-serif;
+}
+
+form label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: block; /* Make labels display as block for proper spacing */
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; /* Full width input fields */
+    padding: 5px;
+    margin-bottom: 5px; /* Add spacing between fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 1em;
+    font-family: inherit; /* Inherit font for consistency */
+}
+
+form textarea {
+    height: 100px; /* Set height for the textarea */
+    resize: none; /* Prevent resizing */
+}
+
+form button {
+    background-color: #f2c94c; /* Gold background for the button */
+    color: #ccc; /* Black text */
+    padding: 10px 20px;
+    border: none; /* Remove border */
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+form button:hover {
+    background-color: #e6b82e; /* Slightly darker gold on hover */
+}
+
 .hoursOperation table{
     width: 95%;
     margin: 0 auto;
@@ -318,12 +378,12 @@ input{
     background-color: #ffe6ac;
     height: 50px;
 }
-/* .hoursOperation{
-    width: 95%;
-    margin: 0 auto;
-} */
+.hoursOperation{
+    margin: 30px 0;
+}
 .daystitle{
     border: #222 1px solid;
+    width: 50%;
 }
 .hourstitle{
     border: #222 1px solid;
@@ -333,10 +393,97 @@ input{
 }
 .titletablehours{
     border: #222 1px solid;
+    font-weight: 400;
+}
+/* General styling for the Hours of Operation table */
+.hoursOperation h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+thead th {
+    background-color: #fbe4aa; /* Light yellow for header */
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+tbody td {
+    border: 1px solid #000; /* Black borders for table cells */
+    padding: 10px;
+    font-size: 1em;
+    text-align: left;
+}
+
+.titletabledays {
+    font-weight: 400; /* Regular font weight for days column */
+}
+
+.titletablehours {
+    font-weight: 400; /* Regular font weight for hours column */
+}
+
+/* Style for the container around the table for spacing */
+.hoursOperation {
+    margin: 30px 0;
+}
+
+.location{
+    padding: 3px;
+    margin-top: 0 auto;
 }
 .footer{
     background-color: #222;
     color: #c78c06;
     margin: 0 auto;
     padding: 3px;
+}
+/* Location Section Styling */
+.location h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.location iframe {
+    width: 100%; /* the map spans the full width of the container */
+    height: 450px; /* height for the map */
+    margin-top: 10px; /* spacing above the map */
+}
+
+/* Footer Styling */
+footer.footer {
+    background-color: #000; /* Black background for footer */
+    color: #c78c06; /* White text */
+    text-align: left; /* Center align text */
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 30px; /* Add spacing above the footer */
+    font-size: 0.9em; /* Slightly smaller font size */
+    line-height: 1.6; /* Adjust line height for better readability */
+}
+
+footer.footer a {
+    color: #c78c06; /* Gold color for links */
+    text-decoration: none; /* Remove underline for links */
+    font-weight: bold; /* Make links bold */
+}
+
+footer.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Ensure responsive spacing */
+.location, footer.footer {
+    margin: 0 auto;
+    max-width: 1200px; /* Add a maximum width for better layout control */
+    padding: 0 15px; /* Add some padding for small screens */
 }
