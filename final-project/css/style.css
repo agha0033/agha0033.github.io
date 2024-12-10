@@ -224,21 +224,25 @@ h3{
 }
 .vision{
     background-image: url(../images/vision.jpg); /* Add the path to your image */
-    height: 40vh;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     color: white;
     text-align: left;
-    padding: 0 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+    padding: 60px 20px;
 }
-.button {
-    padding: 20px 35px;
-    background-color: #222;
+.vision button{
+    background-color: #23223a;
     color: white;
-    font-size: 1.2rem;
+    border: 1px solid #c78c06;
+    padding: 25px 35px;
+    font-size: 2rem;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
 } 
 .teaminfo{
     margin-bottom: 20px;
@@ -322,6 +326,12 @@ input{
     border: #222 1px solid;
 }
 .hourstitle{
+    border: #222 1px solid;
+}
+.titletabledays{
+    border: #222 1px solid;
+}
+.titletablehours{
     border: #222 1px solid;
 }
 .footer{
