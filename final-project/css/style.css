@@ -74,14 +74,14 @@ ul{
     text-align: left;
     color: white;
 }
-
-#home .buttonHome button {
+.banner button {
     background-color: #c78c06;
     color: #222;
     font-size: 1rem;
-    padding: 10px 10px;
+    padding: 25px 35px;
     border: none;
     cursor: pointer;
+    margin-top: 20px;
 }
 #home button:hover {
     background-color: #222;
@@ -121,45 +121,106 @@ h3{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffe6ac;
     margin: 30px auto;
     width: 90%;
+}
+.digitalcontent{
+    background-color: #ffe6ac;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+.digital button{
+    background-color: #000000;
+    color: aliceblue;
+    border: none;
+    padding: 25px 35px;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 .marketing{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffe6ac;
     margin: 30px auto;
     width: 90%;
 }
-.marketing h3, .marketing p {
-    margin-left: 1;
-
+.marketingcontent{
+    background-color: #ffe6ac;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+.marketing button{
+    background-color: #000000;
+    color: aliceblue;
+    border: none;
+    padding: 25px 35px;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 .video{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffe6ac;
     margin: 30px auto;
     width: 90%;
+}
+.videocontent{
+    background-color: #ffe6ac;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+.videocontent button{
+    background-color: #000000;
+    color: aliceblue;
+    border: none;
+    padding: 25px 35px;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 .web{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffe6ac;
     margin: 30px auto;
     width: 90%;
+}
+.webcontent{
+    background-color: #ffe6ac;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+.webcontent button{
+    background-color: #000000;
+    color: aliceblue;
+    border: none;
+    padding: 25px 35px;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 .print{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffe6ac;
     margin: 30px auto;
     width: 90%;
+}
+.printcontent{
+    background-color: #ffe6ac;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+.printcontent button{
+    background-color: #000000;
+    color: aliceblue;
+    border: none;
+    padding: 25px 35px;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 .vision{
     background-image: url(../images/vision.jpg); /* Add the path to your image */
