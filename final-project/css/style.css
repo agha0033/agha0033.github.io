@@ -33,11 +33,18 @@ header{
     text-decoration: none;
     color: #222;
 }
+.nav a:hover
+.nav a:focus {
+    background-color: #222;
+    color: #c78c06;
+    width: 100%;
+}
 .nav a{
-    display: inline-block;
+    display: flex;
     color: #c78c06;
     text-align: center;
     text-decoration: none;
+    flex-direction: column;
     padding: 1rem;
 }
 .nav a:hover,
