@@ -293,6 +293,7 @@ h4{
 }
 
 .john h4 {
+    box-sizing: border-box;
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 10px;
@@ -350,6 +351,12 @@ h4{
     padding: 0 20px; /* Add padding for alignment */
     text-align: left;
 }
+form{
+    box-sizing: border-box;
+    border-radius: grey 1px;
+    padding: 4px;
+    margin: 5px 0;
+}
 input{
     width: 100%;
     padding: 12px 20px; 
@@ -358,6 +365,12 @@ input{
     border: 1px solid #000000; 
     border-radius: 4px; 
     box-sizing: border-box; /*contorls the calculation of an element's width and height, padding and borders.*/
+}
+#fullname{
+    width: 100%;
+}
+#email{
+    width: 100%;
 }
 #message{
     width: 100%;
@@ -501,7 +514,7 @@ footer.footer {
 
 footer.footer a {
     color: #c78c06; /* Gold color for links */
-    text-decoration: none; /* Remove underline for links */
+    text-decoration: underline; /* Remove underline for links */
     font-weight: bold; /* Make links bold */
 }
 
