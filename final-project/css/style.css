@@ -1,7 +1,12 @@
-html{
+html,body{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+/* html{
     background-color: white;
     /* align-items: center; */
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     margin: 0 auto;
 
 }
@@ -14,7 +19,7 @@ body{
     margin: 0 auto;
     padding: 1rem;
     font-size: 19px;
-}
+} */ */
 header{
     background-color: #222;
 }
