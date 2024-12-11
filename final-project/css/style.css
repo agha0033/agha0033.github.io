@@ -14,6 +14,7 @@ body{
 }
 header{
     background-color: #222;
+    padding-bottom: 20px;
 }
 .logo{
     background-color: #c78c06;
