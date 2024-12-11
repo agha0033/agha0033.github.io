@@ -54,7 +54,7 @@ ul{
     border: #c78c06 solid 1.5px;
     padding: 4px 5px;
 }
-.banner-text{
+/* .banner-text{
     content:'';
     position: absolute;
     width: 85%;
@@ -65,18 +65,51 @@ ul{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-}
+} */
 .banner{
-    height: 700px; 
+    position: relative;
+    height: 80vh; 
+    margin: 0 auto;
+    padding: 10px 10pxw;
     background-image: url('../images/main-banner.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
     /* align-items: center; */
     text-align: left;
+    padding: 20px;
     color: white;
+}
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+.banner-text{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    z-index: 2;
+    display: column;
+    text-align: left;
+}
+.banner-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.banner-text p{
+    font-size: 0.8em;
+    margin-bottom: 30px;
+    line-height: 1.5;
 }
 .banner button {
     background-color: #c78c06;
@@ -91,21 +124,22 @@ ul{
     background-color: #222;
     color: #c78c06;
 }
-h1{
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
+
 h2{
     font-size: 2rem;
+    font-weight: bold;
 }
 h3{
     font-size: 2rem;
+    font-weight: bold;
+}
+h4{
+    font-weight: bold;
 }
 .about{
     margin: 0 auto;
     width: 90%;
-    padding: 10px 10px;
+    padding: 30px 30px;
     background-color: #ffe6ac;
     align-content: center;
     margin-bottom: 25px;
@@ -248,9 +282,9 @@ h3{
     gap: 10px;
     margin-top: 20px;
 } 
-.teaminfo{
+.teaminfo {
+    text-align: left;
     margin-bottom: 20px;
-    padding: 0 25px;
 }
 .john{
     display: flex;
@@ -261,17 +295,33 @@ h3{
     background-color: #ffe6ac;
     padding: 0 auto;
 }
-.john h3, h4, p{
-    margin: 15px 0 0 15px;
+.john h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 0 20px;
+    text-align: left;
 }
-.john h3{
-    font-size: 1.6rem;
+
+.john h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0 auto;
+    text-align: left;
 }
-.john h4{
-    font-size: 1rem;
+
+.john hr {
+    border: none;
+    border-top: 2px solid #c78c06; /* Subtle gray horizontal line */
+    margin: 15px 20px; /* Add spacing to the horizontal line */
 }
-.john p{
-    font-size: 0.8rem;
+.john p {
+    font-size: 0.9em;
+    line-height: 1.2;
+    color: #333; /* Darker gray for readability */
+    padding: 0 20px; /* Add padding for alignment */
+    text-align: left;
 }
 .bob{
     display: flex;
@@ -282,17 +332,34 @@ h3{
     background-color: #ffe6ac;
     padding: 0 auto;
 }
-.bob h3, h4, p{
-    margin: 15px 0 0 15px;
+.bob h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 0 20px;
+    text-align: left;
 }
-.bob h3{
-    font-size: 1.6rem;
+
+.bob h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0 auto;
+    text-align: left;
 }
-.bob h4{
-    font-size: 1rem;
+
+.bob hr {
+    border: none;
+    border-top: 2px solid #c78c06; /* Subtle gray horizontal line */
+    margin: 15px 20px; /* Add spacing to the horizontal line */
 }
-.bob p{
-    font-size: 0.8rem;
+
+.bob p {
+    font-size: 0.9em;
+    line-height: 1.2;
+    color: #333; /* Darker gray for readability */
+    padding: 0 20px; /* Add padding for alignment */
+    text-align: left;
 }
 input{
     width: 100%;
@@ -308,12 +375,6 @@ input{
     height: 5em;
     padding: 14px 20px;
 }
-.buttonsend{
-    background-color: #000000;
-    color: #c78c06;
-    padding: 3px 1px;
-    border: none;
-}
 /* Contact Us Section Styling */
 #contact h2 {
     font-size: 2em;
@@ -327,26 +388,14 @@ input{
     margin-bottom: 20px;
 }
 
-form {
-    max-width: 500px; /* Restrict the width of the form */
-    margin: 0 auto; /* Center the form */
-    font-family: Arial, sans-serif;
-}
-
-form label {
-    font-size: 1em;
-    margin-bottom: 5px;
-    display: block; /* Make labels display as block for proper spacing */
-}
-
 form input[type="text"],
 form input[type="email"],
 form textarea {
     width: 100%; /* Full width input fields */
     padding: 5px;
     margin-bottom: 5px; /* Add spacing between fields */
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 4px; /* Slightly rounded corners */
+    border: none solid #ccc; /* Light gray border */
+    
     font-size: 1em;
     font-family: inherit; /* Inherit font for consistency */
 }
@@ -356,14 +405,13 @@ form textarea {
     resize: none; /* Prevent resizing */
 }
 
-form button {
-    background-color: #f2c94c; /* Gold background for the button */
-    color: #ccc; /* Black text */
-    padding: 10px 20px;
+.buttonsend{
+    background-color: #000000; /* Gold background for the button */
+    color: #c78c06;
+    padding: 3px 1px;
     border: none; /* Remove border */
     font-size: 1em;
     font-weight: bold;
-    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 form button:hover {
@@ -374,10 +422,6 @@ form button:hover {
     width: 95%;
     margin: 0 auto;
 }
-.d0htable{
-    background-color: #ffe6ac;
-    height: 50px;
-}
 .hoursOperation{
     margin: 30px 0;
 }
@@ -387,13 +431,6 @@ form button:hover {
 }
 .hourstitle{
     border: #222 1px solid;
-}
-.titletabledays{
-    border: #222 1px solid;
-}
-.titletablehours{
-    border: #222 1px solid;
-    font-weight: 400;
 }
 /* General styling for the Hours of Operation table */
 .hoursOperation h3 {
@@ -406,7 +443,6 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    font-family: Arial, sans-serif;
 }
 
 thead th {
