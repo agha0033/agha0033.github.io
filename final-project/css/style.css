@@ -99,7 +99,7 @@ ul{
 #home p{
     color: white;
 }
-#home .buttonConnect button{
+.buttonConnect button{
     background-color: #c78c06;
     color: #222;
     border: none;
