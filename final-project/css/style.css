@@ -21,25 +21,37 @@ header{
     background-color: #222;
 }
 
-.listHome{
-    background-image: url("/final-project/images/logo.png"); 
+header{
+    background-color: #222;
+}
+.logo{
+    background-color: #c78c06;
+}
+.nav a{
+    display: inline-block;
+    color: #c78c06;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.imagelogo{
     background-repeat: no-repeat;
     background-color: #c78c06;
     box-sizing: border-box;
-    padding-bottom: 20px;
+    padding: 0.5em;
 }
 
-.listHome ul{
-    padding-top: 160px;
+.nav ul{
     text-align: center;
 }
 
-.listHome ul li a:link, 
-.listHome ul li a:visited, 
-.listHome ul li a:hover,
-.listHome ul li a:active{
+.nav ul li a:link, 
+.nav ul li a:visited, 
+.nav ul li a:hover,
+.nav ul li a:active{
     text-decoration: none;
-    color: #222;
+    color: #c78c06;
 }
 
 .nav a:hover
