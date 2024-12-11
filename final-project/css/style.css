@@ -87,6 +87,7 @@ ul{
     position: absolute;
     top: 0;
     left: 0;
+    padding: 10px;
     width: 100%;
     height: 90%;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
@@ -372,8 +373,11 @@ input{
 }
 #message{
     width: 100%;
-    height: 5em;
-    padding: 14px 20px;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: grey 1px;
+    padding: 4px;
+    margin: 5px 0;
 }
 /* Contact Us Section Styling */
 #contact h2 {
