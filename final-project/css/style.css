@@ -53,13 +53,6 @@ header{
     color: #222;
     width: 100%;
 }
-.searchinput{
-    padding: 1.5rem;
-}
-.input{
-    width: 90%;
-    height: 16px;
-}
 ul{
     list-style: none;
 }
@@ -73,78 +66,48 @@ ul{
     border: #c78c06 solid 1.5px;
     padding: 4px 5px;
 }
-/* .banner-text{
-    content:'';
-    position: absolute;
-    width: 85%;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.5);;
-    padding: 20px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    flex-direction: column;
-} */
-.banner{
-    position: relative;
-    height: 80vh; 
-    margin: 0 auto;
-    padding: 10px 10pxw;
-    background-image: url('../images/main-banner.jpg'); /* Replace with your image path */
+.searchinput{
+    padding: 1.5rem;
+}
+.input{
+    width: 90%;
+    height: 16px;
+}
+#home{
+    background-image: url("/final-project/images/main-banner.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    text-align: left;
-    padding: 20px;
+    height: 100vh;
+}
+#home h1, #home p, #home .buttonConnect{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+#home h1{
+    color: white;
+    font-size: 3.75rem;
+    font-weight: bold;
+    padding: 20px 30px;
+}
+#home p{
     color: white;
 }
-.banner::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    width: 100%;
-    height: 90%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    z-index: 1;
-}
-.banner-text{
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    z-index: 2;
-    display: column;
-    text-align: left;
-}
-.banner-text h1 {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
-.banner-text p{
-    font-size: 0.8em;
-    margin-bottom: 30px;
-    line-height: 1.5;
-}
-.banner button {
+#home .buttonConnect button{
     background-color: #c78c06;
-    color: #222;
-    font-size: 1rem;
     padding: 25px 35px;
+    margin-top: 20px;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
 }
-.banner button:hover {
+#home .buttonConnect:hover button{
     background-color: #222;
     color: #c78c06;
 }
-
 h2{
     font-size: 2rem;
     font-weight: bold;
@@ -160,8 +123,7 @@ h4{
     display: flex;
     background-color: #ffe6ac;
     flex-direction: column;
-    margin-bottom: 25px;
-    font-size: 15px;
+    padding: 15px;
 }
 #about h2, #about p{
     padding: 10px 0 10 10px;
@@ -172,9 +134,12 @@ h4{
 .image1{
     width: 100%;
 }
-#services h2{
-    width: 95%;
+#services{
     margin: 0 auto;
+    width: 98%;
+}
+#services h2{
+    padding: 30px 0 20px 0;
 }
 .digital{
     display: flex;
