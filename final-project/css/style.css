@@ -21,12 +21,17 @@ header{
     background-color: #c78c06;
     box-sizing: border-box;
     padding-bottom: 20px;
-    text-decoration: none;
-    color: #222;
 }
 .listHome ul{
     padding-top: 160px;
     text-align: center;
+}
+.listHome ul li a:link, 
+.listHome ul li a:visited, 
+.listHome ul li a:hover,
+.listHome ul li a:active{
+    text-decoration: none;
+    color: #222;
 }
 .nav a{
     display: inline-block;
