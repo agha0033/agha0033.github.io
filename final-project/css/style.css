@@ -436,7 +436,7 @@ input{
 
 /* Contact Us Section Styling */
 #contact h2 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -583,4 +583,194 @@ footer.footer a:hover {
     margin: 0 auto;
     max-width: 1200px; /* Add a maximum width for better layout control */
     padding: 0 15px; /* Add some padding for small screens */
+}
+
+@media screen and (min-width: 1200px) {
+    .websiteC {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #222;
+    }
+
+    .listHome {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .listHome img {
+        height: 50px;
+        width: auto;
+    }
+
+    nav ul{
+        list-style: none;
+        padding: 0.7rem 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    nav ul li{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul li a{
+        color: #c78c06; 
+        padding: 1rem;
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 53px;
+    }
+
+    .listHome ul li a:hover {
+        background-color: #c78c06;
+        color: #222;
+    }
+
+    .searchinput {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .searchinput input {
+        padding: 10px;
+        border: 1px solid #c78c06;
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    .searchinput button {
+        background-color: #c78c06;
+        color: #222;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .searchinput button:hover {
+        background-color: #222;
+        color: #c78c06;
+
+    .nav-content {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    #home {
+        height: 700px;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #home h1 {
+        font-size: 4.5rem;
+        width: 60%;
+    }
+
+    #about {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #about .image1 {
+        width: 50%;
+        height: auto;
+    }
+
+    #about h2, #about p {
+        width: 45%;
+    }
+
+    #services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .digital, .marketing, .video, .web, .print {
+        width: 48%;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .digital img, .marketing img, .video img, .web img, .print img {
+        width: 40%;
+        height: auto;
+    }
+
+    .digitalcontent, .marketingcontent, .videocontent, .webcontent, .printcontent {
+        width: 55%;
+        padding: 20px;
+    }
+
+    .vision {
+        text-align: left;
+        padding: 50px;
+        margin: 40px auto;
+        max-width: 1000px;
+    }
+
+    .teaminfo {
+        text-align: center;
+    }
+
+    .john, .bob {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .john img, .bob img {
+        width: 25%;
+        height: auto;
+    }
+
+    .john-content, .bob-content {
+        width: 70%;
+    }
+
+    #contact {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .messageinput {
+        width: 60%;
+    }
+
+    .location {
+        width: 35%;
+    }
+
+    .hoursOperation table {
+        margin-top: 20px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
 }
