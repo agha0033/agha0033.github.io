@@ -1,48 +1,52 @@
-*{
+* {
     box-sizing: border-box;
 }
-.websiteC{
+
+.websiteC {
     width: 100%;
     margin: 0 auto;
 }
-html, body{
+
+html, body {
     background-color: white;
-    /* align-items: center; */
-    box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     line-height: 1.6;
     font-size: 18px;
-
 }
-header{
+
+header {
     background-color: #222;
 }
-.listHome{
-    background-image: url("/final-project/images/logo.png"); 
+
+.listHome {
+    background-image: url("/final-project/images/logo.png");
     background-repeat: no-repeat;
     background-color: #c78c06;
-    box-sizing: border-box;
     padding-bottom: 20px;
 }
-.listHome ul{
+
+.listHome ul {
     padding-top: 160px;
     text-align: center;
 }
-.listHome ul li a:link, 
-.listHome ul li a:visited, 
+
+.listHome ul li a:link,
+.listHome ul li a:visited,
 .listHome ul li a:hover,
-.listHome ul li a:active{
+.listHome ul li a:active {
     text-decoration: none;
     color: #222;
 }
-.nav a:hover
+
+.nav a:hover,
 .nav a:focus {
     background-color: #222;
     color: #c78c06;
     width: 100%;
 }
-.nav a{
+
+.nav a {
     display: flex;
     color: #c78c06;
     text-align: center;
@@ -50,33 +54,33 @@ header{
     flex-direction: column;
     padding: 1rem;
 }
-.nav a:hover,
-.nav a:focus {
-    background-color: #c78c06;
-    color: #222;
-    width: 100%;
-}
-ul{
+
+ul {
     list-style: none;
 }
-.nav-content{
+
+.nav-content {
     display: flex;
     justify-content: center;
 }
-.buttonSearch{
+
+.buttonSearch {
     color: #c78c06;
     background-color: #222;
-    border: #c78c06 solid 1.5px;
+    border: 1.5px solid #c78c06;
     padding: 4px 5px;
 }
-.searchinput{
+
+.searchinput {
     padding: 1.5rem;
 }
-.input{
+
+.input {
     width: 90%;
     height: 16px;
 }
-#home{
+
+#home {
     background-image: url("/final-project/images/main-banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -86,20 +90,21 @@ ul{
     justify-content: center;
     height: 100vh;
 }
-#home h1, #home p, #home .buttonConnect{
+
+#home h1, #home p, #home .buttonConnect {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
-#home h1{
+
+/* Header and button styling */
+#home h1 {
     color: white;
     font-size: 3.75rem;
     font-weight: bold;
     padding: 20px 30px;
 }
-#home p{
-    color: white;
-}
-.buttonConnect button{
+
+.buttonConnect button {
     background-color: #c78c06;
     color: #222;
     border: none;
@@ -107,57 +112,59 @@ ul{
     font-size: 1.5rem;
     margin-top: 20px;
 }
-.buttonConnect:hover button{
+
+.buttonConnect:hover button {
     background-color: #222;
     color: #c78c06;
 }
-h2{
-    font-size: 2rem;
-    font-weight: bold;
-}
-h3{
-    font-size: 2rem;
-    font-weight: bold;
-}
-h4{
-    font-weight: bold;
-}
-#about{
+
+/* About Section */
+#about {
     display: flex;
     background-color: #ffe6ac;
     flex-direction: column;
     padding: 15px;
 }
-#about h2, #about p{
-    padding: 10px 0 10 10px;
+
+#about h2, #about p {
+    padding: 10px 10px 10px 0;
 }
-#about p{
+
+#about p {
     padding-bottom: 0;
 }
-.image1{
+
+.image1 {
     width: 100%;
 }
-#services{
+
+/* Services Section */
+#services {
     margin: 0 auto;
     width: 98%;
 }
-#services h2{
+
+#services h2 {
     padding: 30px 0 20px 0;
 }
-.digital{
+
+/* Digital Section */
+.digital {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 30px auto;
     width: 90%;
 }
-.digitalcontent{
+
+.digitalcontent {
     background-color: #ffe6ac;
     margin: 0 auto;
     padding: 20px;
     text-align: left;
 }
-.digital button{
+
+.digital button {
     background-color: #000000;
     color: aliceblue;
     border: none;
@@ -165,20 +172,18 @@ h4{
     font-size: 1.5rem;
     margin-top: 20px;
 }
-.marketing{
+
+/* Other Sections */
+.marketing, .video, .web, .print {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 30px auto;
     width: 90%;
 }
-.marketingcontent{
-    background-color: #ffe6ac;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
-.marketing button{
+
+/* Buttons */
+.marketing button, .videocontent button, .webcontent button, .printcontent button {
     background-color: #000000;
     color: aliceblue;
     border: none;
@@ -186,345 +191,40 @@ h4{
     font-size: 1.5rem;
     margin-top: 20px;
 }
-.video{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px auto;
-    width: 90%;
-}
-.videocontent{
-    background-color: #ffe6ac;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
-.videocontent button{
-    background-color: #000000;
-    color: aliceblue;
-    border: none;
-    padding: 25px 35px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-.web{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px auto;
-    width: 90%;
-}
-.webcontent{
-    background-color: #ffe6ac;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
-.webcontent button{
-    background-color: #000000;
-    color: aliceblue;
-    border: none;
-    padding: 25px 35px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-.print{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px auto;
-    width: 90%;
-}
-.printcontent{
-    background-color: #ffe6ac;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
-.printcontent button{
-    background-color: #000000;
-    color: aliceblue;
-    border: none;
-    padding: 25px 35px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-.vision{
-    background-image: url(../images/vision.jpg); /* Add the path to your image */
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    color: white;
-    text-align: left;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: left;
-    padding: 60px 20px;
-}
-.vision button{
-    background-color: #23223a;
-    color: white;
-    border: 1px solid #c78c06;
-    padding: 25px 35px;
-    font-size: 2rem;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-} 
-.teaminfo {
-    text-align: left;
-    margin-bottom: 20px;
-}
-.john{
-    display: flex;
-    flex-direction: column;
-    justify-content: cen;
-    margin: 30px auto;
-    width: 90%;
-    background-color: #ffe6ac;
-    padding: 0 auto;
-}
-.john h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 15px;
-    padding: 0 20px;
-    text-align: left;
-}
 
-.john h4 {
-    box-sizing: border-box;
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    padding: 0 auto;
-    text-align: left;
-}
-
-.john hr {
-    border: none;
-    border-top: 2px solid #c78c06; /* Subtle gray horizontal line */
-    margin: 15px 20px; /* Add spacing to the horizontal line */
-}
-.john p {
-    font-size: 0.9em;
-    line-height: 1.2;
-    color: #333; /* Darker gray for readability */
-    padding: 0 20px; /* Add padding for alignment */
-    text-align: left;
-}
-.bob{
-    display: flex;
-    flex-direction: column;
-    justify-content: cen;
-    margin: 30px auto;
-    width: 90%;
-    background-color: #ffe6ac;
-    padding: 0 auto;
-}
-.bob h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 15px;
-    padding: 0 20px;
-    text-align: left;
-}
-
-.bob h4 {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    padding: 0 auto;
-    text-align: left;
-}
-
-.bob hr {
-    border: none;
-    border-top: 2px solid #c78c06; /* Subtle gray horizontal line */
-    margin: 15px 20px; /* Add spacing to the horizontal line */
-}
-
-.bob p {
-    font-size: 0.9em;
-    line-height: 1.2;
-    color: #333; /* Darker gray for readability */
-    padding: 0 20px; /* Add padding for alignment */
-    text-align: left;
-}
-form{
-    box-sizing: border-box;
-    border-radius: grey 1px;
+/* Contact Us Section */
+form {
+    border: 1px solid grey;
     padding: 4px;
     margin: 5px 0;
 }
-input{
-    width: 100%;
-    padding: 12px 20px; 
-    margin: 8px 0;
-    display: inline-block; 
-    border: 1px solid #000000; 
-    border-radius: 4px; 
-    box-sizing: border-box; /*contorls the calculation of an element's width and height, padding and borders.*/
-}
-#fullname{
-    width: 100%;
-}
-#email{
-    width: 100%;
-}
-#message{
-    width: 100%;
-    height: 150px;
-    box-sizing: border-box;
-    border-radius: grey 1px;
-    padding: 4px;
-    margin: 5px 0;
-}
-/* Contact Us Section Styling */
-#contact h2 {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
 
-#contact h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%; /* Full width input fields */
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
     padding: 5px;
-    margin-bottom: 5px; /* Add spacing between fields */
-    border: none solid #ccc; /* Light gray border */
-    
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
     font-size: 1em;
-    font-family: inherit; /* Inherit font for consistency */
+    font-family: inherit;
 }
 
-form textarea {
-    height: 100px; /* Set height for the textarea */
-    resize: none; /* Prevent resizing */
-}
-
-.buttonsend{
-    background-color: #000000; /* Gold background for the button */
-    color: #c78c06;
-    padding: 3px 1px;
-    border: none; /* Remove border */
-    font-size: 1em;
-    font-weight: bold;
-}
-
-form button:hover {
-    background-color: #e6b82e; /* Slightly darker gold on hover */
-}
-
-.hoursOperation table{
-    width: 95%;
-    margin: 0 auto;
-}
-.hoursOperation{
-    margin: 30px 0;
-}
-.daystitle{
-    border: #222 1px solid;
-    width: 50%;
-}
-.hourstitle{
-    border: #222 1px solid;
-}
-/* General styling for the Hours of Operation table */
-.hoursOperation h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-thead th {
-    background-color: #fbe4aa; /* Light yellow for header */
-    text-align: center;
-    padding: 12px;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-tbody td {
-    border: 1px solid #000; /* Black borders for table cells */
-    padding: 10px;
-    font-size: 1em;
-    text-align: left;
-}
-
-.titletabledays {
-    font-weight: 400; /* Regular font weight for days column */
-}
-
-.titletablehours {
-    font-weight: 400; /* Regular font weight for hours column */
-}
-
-/* Style for the container around the table for spacing */
-.hoursOperation {
-    margin: 30px 0;
-}
-
-.location{
-    padding: 3px;
-    margin-top: 0 auto;
-}
-.footer{
-    background-color: #222;
-    color: #c78c06;
-    margin: 0 auto;
-    padding: 3px;
-}
-/* Location Section Styling */
-.location h3 {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.location iframe {
-    width: 100%; /* the map spans the full width of the container */
-    height: 450px; /* height for the map */
-    margin-top: 10px; /* spacing above the map */
-}
-
-/* Footer Styling */
+/* Footer Section */
 footer.footer {
-    background-color: #000; /* Black background for footer */
-    color: #c78c06; /* White text */
-    text-align: left; /* Center align text */
-    padding: 20px; /* Add padding for spacing */
-    margin-top: 30px; /* Add spacing above the footer */
-    font-size: 0.9em; /* Slightly smaller font size */
-    line-height: 1.6; /* Adjust line height for better readability */
+    background-color: #000;
+    color: #c78c06;
+    text-align: left;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    line-height: 1.6;
 }
 
 footer.footer a {
-    color: #c78c06; /* Gold color for links */
-    text-decoration: underline; /* Remove underline for links */
-    font-weight: bold; /* Make links bold */
+    color: #c78c06;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer.footer a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-/* Ensure responsive spacing */
-.location, footer.footer {
-    margin: 0 auto;
-    max-width: 1200px; /* Add a maximum width for better layout control */
-    padding: 0 15px; /* Add some padding for small screens */
+    text-decoration: underline;
 }
