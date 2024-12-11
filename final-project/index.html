@@ -6,10 +6,9 @@
     <title>Final Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100..900&family=Noto+Sans:wght@100..900&family=Nunito+Sans:wght@200..1000&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    
 </head>
 <body>
     <div class="websiteC">
@@ -24,7 +23,6 @@
             <div class="nav">
                 <nav class="container nav-content">
                     <ul>
-                        <li></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#team">Team</a></li>
@@ -33,162 +31,154 @@
                 </nav>
             </div>
             <div class="searchinput">
-                <input type="text" placeholder="Search" name="Search" class="input">
-                <!-- the i class is for the button and shows search icon-->
-                <button class="buttonSearch"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                <input type="text" placeholder="Search" name="Search" class="input" aria-label="Search">
+                <button class="buttonSearch">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <span class="sr-only">Search</span>
+                </button>
             </div>
         </header>
         <main>
-            <!--a section decdicated to home-->
+            <!-- Home Section -->
             <section id="home">
-                <!--always add an alt to images so that screenreaders can read-->
                 <h1>Welcome to Tree Star Media</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi qui quia aspernatur nam optio pariatur magni, inventore earum! Doloremque, dolorum ipsa! Minus fuga explicabo ea similique voluptatum distinctio consequuntur doloremque?</p>
-                <!--a button for connection services-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi qui quia aspernatur nam optio pariatur magni.</p>
                 <div class="buttonConnect">
-                <button>Connect with us <i class="fa-solid fa-caret-right"></i></button>
+                    <button>Connect with us <i class="fa-solid fa-caret-right"></i></button>
                 </div>
             </section>
+
+            <!-- About Section -->
             <section id="about">
                 <div class="about">
-                    <img src="./images/about-us.jpg" alt="about us" class="image1">
+                    <img src="./images/about-us.jpg" alt="About us" class="image1">
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aut soluta sequi eaque incidunt, deserunt nesciunt minima velit excepturi expedita officiis repellendus tempore iusto dolores quas totam minus ducimus. Maiores.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ab doloremque reiciendis voluptate aut debitis ipsam unde labore cum esse quod minus maxime alias dicta temporibus tempora iusto, fugit possimus?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aut soluta sequi eaque incidunt.</p>
                 </div>
             </section>
+
+            <!-- Services Section -->
             <section id="services">
                 <h2>Our Services</h2>
                 <div class="digital">
-                        <img src="./images/digital.jpg" alt="digital transformation">
-                        <div class="digitalcontent">
-                            <h3>Digital Transformation</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit culpa ducimus enim! Fugiat molestias accusamus porro necessitatibus! Temporibus sapiente nemo perspiciatis ex, sit mollitia veniam eum rerum, quae, nobis officiis.</p>
-                         <!--the next 4 buttons shouls look the same, so they will be addressed with the same class -->
-                            <button>Digital Plans <i class="fa-solid fa-caret-right"></i></button>
-                        </div>
+                    <img src="./images/digital.jpg" alt="Digital transformation">
+                    <div class="digitalcontent">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit culpa ducimus enim!</p>
+                        <button>Digital Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
                 </div>
 
                 <div class="marketing">
-                        <img src="./images/marketing.jpg" alt="marketing">
-                        <div class="marketingcontent">
-                            <h3>Marketing</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores nihil reiciendis dolorem quo dolore, fugit obcaecati id, necessitatibus ad ipsum odio ab est distinctio consequuntur quod. Odio quibusdam assumenda repellat?</p>
-                            <button>Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
-                        </div>
-                </div>
-            
-                <div class="video">
-                    <img src="./images/video.jpg" alt="video production">
-                    <div class="videocontent">
-                        <h3>Video Production</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident eius laboriosam consectetur fuga soluta nisi optio natus deleniti iure ipsam nostrum veniam, assumenda placeat suscipit atque quasi enim beatae!</p>
-                        <div class="buttonsimilar">
-                            <button>Video Plans <i class="fa-solid fa-caret-right"></i></button>
-                        </div>
+                    <img src="./images/marketing.jpg" alt="Marketing">
+                    <div class="marketingcontent">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores nihil reiciendis dolorem.</p>
+                        <button>Marketing Plans <i class="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
-            
+
+                <div class="video">
+                    <img src="./images/video.jpg" alt="Video production">
+                    <div class="videocontent">
+                        <h3>Video Production</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In provident eius laboriosam.</p>
+                        <button>Video Plans <i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
+
                 <div class="web">
-                    <img src="./images/web.jpg" alt="web development">
+                    <img src="./images/web.jpg" alt="Web development">
                     <div class="webcontent">
                         <h3>Web Development</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus similique enim itaque vitae eum vel voluptatem atque accusantium incidunt. Quidem expedita vero pariatur labore omnis harum reiciendis qui ad provident.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus similique enim.</p>
                         <button>Web Plans <i class="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
-            
+
                 <div class="print">
-                    <img src="./images/print.jpg" alt="print">
+                    <img src="./images/print.jpg" alt="Print">
                     <div class="printcontent">
                         <h3>Print</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eum inventore quo fuga voluptatem eligendi ut explicabo perspiciatis nihil illo temporibus aspernatur delectus nulla non molestias, saepe ullam dolore architecto.</p>
-                        <button class="learn">Print Plans <i class="fa-solid fa-caret-right"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eum inventore quo fuga voluptatem eligendi ut explicabo perspiciatis.</p>
+                        <button>Print Plans <i class="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
-            
+
                 <div class="vision">
                     <h3>Our Vision</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sequi repellendus fugiat vero, laborum nostrum esse iste dolor minima. Assumenda numquam voluptatem ratione blanditiis iusto magnam illum optio officia adipisci!</p>
-                    <!--created a different button since it looks different than the other ones-->
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sequi repellendus fugiat vero.</p>
                     <button>Learn More <i class="fa-solid fa-caret-right"></i></button>
                 </div>
             </section>
-            <div class="teaminfo">
+
+            <!-- Team Section -->
+            <section id="team">
                 <h2>Our Team</h2>
-            </div>
-                <section>
-                    <div class="john">
-                        <img src="./images/john.jpg" alt="image of John">
-                        <div class="john-content">
-                            <h3>John Doe</h3>
-                            <h4>CEO and Co-owner</h4>
-                            <hr>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic voluptates in, quasi cum enim praesentium nisi, qui facere beatae corporis? Neque soluta quasi ipsam velit saepe esse, omnis sapiente?</p>
-                        </div>
+                <div class="john">
+                    <img src="./images/john.jpg" alt="John Doe">
+                    <div class="john-content">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic voluptates in, quasi cum enim praesentium nisi.</p>
                     </div>
-                    <div class="bob">
-                        <img src="./images/bob.jpg" alt="image of Bob">
-                        <h3>Bob Rite</h3>
-                        <h4>CFO and Co-owner</h4><hr> 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquam voluptatum temporibus! Et qui iusto dolorem explicabo, aperiam dignissimos repellat quibusdam reiciendis. Doloremque id animi blanditiis sint, dolorum et voluptates.</p>
-                    </div>
-                </section>
-        
+                </div>
+                <div class="bob">
+                    <img src="./images/bob.jpg" alt="Bob Rite">
+                    <h3>Bob Rite</h3>
+                    <h4>CFO and Co-owner</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquam voluptatum temporibus!</p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
             <section id="contact">
                 <h2>Contact Us</h2>
                 <div class="messageinput">
                     <h3>Send us a message</h3>
                     <form action="index.html" method="post">
-                        <label for="fullname">Full Name</label><br>
-                        <input id="fullname" type="text" name="Your Name" required><br>
-                        <label for="email">Email</label><br>
-                        <input id="email" type="email" name="Your Email" required><br>
-                        <label for="message">Message</label><br>
-                        <textarea id="message" name="Your Message" required></textarea><br>
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" type="text" name="fullname" required>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
                         <button type="submit" class="buttonsend">Send</button>
                     </form>
                 </div>
                 <div class="hoursOperation">
                     <h3>Hours of Operation</h3>
-                    <!--table defines a table structure-->
                     <table>
                         <thead>
-                            <!--tr defines a table row-->
-                            <tr class="d0htable">
-                                <!--th is our table header cell-->
-                                <th class="daystitle">Days</th>
-                                <th class="hourstitle">Hours</th>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <!--td is our table data cell-->
-                                <td class="titletabledays">Monday - Friday</td>
-                                <td class="titletablehours">9 AM - 6 PM</td>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
                             </tr>
                             <tr>
-                                <td class="titletabledays">Saturday - Sunday</td>
-                                <td class="titletablehours">Closed</td>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="location">
                     <h3>Location</h3>
-                    <!--iframe is for when we want to add the gogole maps url and showcase a-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.897688710392!2d-75.75974656511231!3d45.34984490000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732125550795!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <!--&copy; for creating the copy right icon-->
-            <p>&copy; Copyright Three Star Media, 2024
-            <br> All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
-            <!--the a will help us have a link on the word by using href and putting the url in there-->
+            <p>&copy; 2024 Tree Star Media. All images from <a href="https://unsplash.com/">Unsplash</a>.</p>
         </footer>
-        <!--java script icons go before the ending of the body tag and help making the icons appear-->
-        <script src="https://kit.fontawesome.com/faefe823ea.js" crossorigin="anonymous"></script> 
+        <script src="https://kit.fontawesome.com/faefe823ea.js" crossorigin="anonymous"></script>
     </div>
 </body>
 </html>
