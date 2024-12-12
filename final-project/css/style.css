@@ -637,7 +637,7 @@ td{
     .contactInfo .part1:nth-child(2){
         grid-area: three; /* places the second child in the "three" area of the grid */
     }
-    }
+    
 
     .contactInfo .part1:nth-child(3){
         grid-area: two; /* places the third child in the "two" area of the grid */
