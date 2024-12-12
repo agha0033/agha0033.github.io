@@ -55,13 +55,6 @@ header{
     color: #c78c06;
 }
 
-.nav a:hover
-.nav a:focus {
-    background-color: #222;
-    color: #c78c06;
-    width: 100%;
-}
-
 .nav a{
     display: flex;
     color: #c78c06;
@@ -325,35 +318,23 @@ input{
     padding: 4px;
     margin: 5px 0;
 }
-
-/* Contact Us Section Styling */
-#contact h2 {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 10px;
+.contact {
+    padding: 20px 20px; 
+    background-color: #fff; 
+    text-align: left; 
 }
-
-#contact h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
+.contact h2 {
+    padding-bottom: 20px;
+    padding-left:0 ;
 }
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%; /* Full width input fields */
-    padding: 5px;
-    margin-bottom: 5px; /* Add spacing between fields */
-    border: none solid #ccc; /* Light gray border */
-    
-    font-size: 1em;
-    font-family: inherit; /* for consistency */
-}
-
-form textarea {
-    height: 100px; /* This sets height for the textarea */
-    resize: none; /* This prevents resizing */
+input {
+    width: 100%; 
+    height: 30px; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border: 1px solid #000000; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
 }
 
 .buttonsend{
@@ -387,20 +368,12 @@ form button:hover {
     border: #222 1px solid;
 }
 
-/* styling for the Hours of Operation table */
-.hoursOperation h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
 table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    border: #000000 1px solid; 
 }
 
-thead th{
+th{
     background-color: #fbe4aa; /* Light yellow for header */
     text-align: center;
     padding: 12px;
@@ -408,73 +381,24 @@ thead th{
     font-size: 1em;
 }
 
-tbody td{
+td{
     border: 1px solid #000; /* Black borders for table cells */
     padding: 10px;
     font-size: 1em;
     text-align: left;
+    vertical-align: middle;
 }
 
-.titletabledays{
-    font-weight: 400; 
-}
 
-.titletablehours{
-    font-weight: 400; 
-}
-
-.hoursOperation{
-    margin: 30px 0; /* Style for the container around the table for spacing */
-}
-
-.location{
-    padding: 3px;
-    margin-top: 0 auto;
-}
-.footer{
-    background-color: #222;
-    color: #c78c06;
-    margin: 0 auto;
-    padding: 3px;
-}
-
-.location h3 {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.location iframe {
-    width: 100%; /* the map spans the full width of the container */
-    height: 450px; /* height for the map */
-    margin-top: 10px; /* spacing above the map */
-}
-
-footer.footer {
-    background-color: #000; /* Black background for footer */
+.footer {
+    background-color: #222; /* Black background for footer */
     color: #c78c06; /* White text */
     text-align: left; /* Center align text */
-    padding: 20px; /* Add padding for spacing */
-    margin-top: 30px; /* Add spacing above the footer */
-    font-size: 0.9em; /* Slightly smaller font size */
-    line-height: 1.6; /* Adjust line height for better readability */
 }
 
-footer.footer a {
+.footer a {
     color: #c78c06; /* Gold color for links */
     text-decoration: underline; /* Remove underline for links */
-    font-weight: bold; /* Make links bold */
-}
-
-footer.footer a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-/* Ensure responsive spacing */
-.location, footer.footer {
-    margin: 0 auto;
-    max-width: 1200px; /* Add a maximum width for better layout control */
-    padding: 0 15px; /* Add some padding for small screens */
 }
 
 @media screen and (min-width:760px) {
@@ -585,6 +509,11 @@ footer.footer a:hover {
 
     .aboutcontent h2{
         padding: 0;
+        font-size: 1.2rem;
+    }
+
+    .aboutcontent p{
+        font-size: 1.2rem;
     }
 
     .gridservices{
@@ -658,4 +587,30 @@ footer.footer a:hover {
 
     .teamsection .picture:nth-child(3){
         grid-area: four;
+    }
+
+    #contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        grid-template-areas: 
+        "one one two two"
+        "three three three three";
+    }
+
+    .contactInfo .part1:nth-child(1){
+        grid-area: one;
+    }
+
+    .contactInfo .part1:nth-child(2){
+        grid-area: three;
+    }
+
+    .contactInfo .part1:nth-child(3){
+        grid-area: two;
+    }
+
+    .footer{
+        padding-left: 100px;
     }

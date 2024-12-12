@@ -21,7 +21,7 @@
                 <nav class="navContent">
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -135,48 +135,51 @@
         
             <section id="contact">
                 <h2>Contact Us</h2><br>
-                <div class="messageinput">
-                <h3>Send us a message</h3>
-                <form action="index.html" method="post">
-                    <label for="fullname">Full Name</label><br>
-                    <input id="fullname" type="text" name="Your Name" required><br>
-                    <label for="email">Email</label><br>
-                    <input id="email" type="email" name="Your Email" required><br>
-                    <label for="message">Message</label><br>
-                    <textarea id="message" name="Your Message" required></textarea><br>
-                    <button type="submit" class="buttonsend">Send</button>
-                </form>
+                <div class="contactInfo">
+                    <div class="messageinput part1">
+                        <h3>Send us a message</h3>
+                        <form action="index.html" method="post" class="formContent">
+                            <label for="fullname">Full Name</label><br>
+                            <input id="fullname" type="text" name="Your Name" required><br>
+                            <label for="email">Email</label><br>
+                            <input id="email" type="email" name="Your Email" required><br>
+                            <label for="message">Message</label><br>
+                            <textarea id="message" name="Your Message" required></textarea><br>
+                            <button type="submit" class="buttonsend">Send</button>
+                        </form>
+                    </div>
+                    <div class="hoursOperation part1">
+                        <h3>Hours of Operation</h3>
+                        <!--table defines a table structure-->
+                        <table>
+                            <thead>
+                                <!--tr defines a table row-->
+                                <tr class="d0htable">
+                                    <!--th is our table header cell-->
+                                    <th class="daystitle">Days</th>
+                                    <th class="hourstitle">Hours</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <!--td is our table data cell-->
+                                    <td class="titletabledays">Monday - Friday</td>
+                                    <td class="titletablehours">9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td class="titletabledays">Saturday - Sunday</td>
+                                    <td class="titletablehours">Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="location part1">
+                        <h3>Location</h3>
+                        <!--iframe is for when we want to add the gogole maps url and showcase a-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.897688710392!2d-75.75974656511231!3d45.34984490000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732125550795!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-                <div class="hoursOperation">
-                    <h3>Hours of Operation</h3>
-                    <!--table defines a table structure-->
-                    <table>
-                        <thead>
-                            <!--tr defines a table row-->
-                            <tr class="d0htable">
-                                <!--th is our table header cell-->
-                                <th class="daystitle">Days</th>
-                                <th class="hourstitle">Hours</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <!--td is our table data cell-->
-                                <td class="titletabledays">Monday - Friday</td>
-                                <td class="titletablehours">9 AM - 6 PM</td>
-                            </tr>
-                            <tr>
-                                <td class="titletabledays">Saturday - Sunday</td>
-                                <td class="titletablehours">Closed</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="location">
-                    <h3>Location</h3>
-                    <!--iframe is for when we want to add the gogole maps url and showcase a-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5607.897688710392!2d-75.75974656511231!3d45.34984490000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732125550795!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            </section>
         </main>
         <footer class="footer">
             <!--&copy; for creating the copy right icon-->
