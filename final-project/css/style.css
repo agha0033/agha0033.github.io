@@ -97,7 +97,7 @@ ul{
     padding: 1.5rem;
 }
 
-.input{
+.inputSearch{
     width: 90%;
     height: 16px;
 }
@@ -185,21 +185,12 @@ h4{
     padding: 30px 0 20px 0;
 }
 
-.digitalcontent{
+.digital{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffe6ac;
+    margin: 30px auto;
     width: 90%;
-    margin-bottom: 10px;
-}
-
-.digitalcontent img{
-    width: 100%;
-}
-
-.digitalcontent h3, .digitalcontent p{
-    margin: 15px 0 0 15px;
 }
 
 .digitalcontent{
@@ -209,16 +200,13 @@ h4{
     text-align: left;
 }
 
-.digitalcontent button{
+.digital button{
     background-color: #000000;
     color: aliceblue;
     border: none;
     padding: 25px 35px;
     font-size: 1.5rem;
     margin-top: 20px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    text-align: left;
 }
 
 .marketing{
@@ -341,7 +329,7 @@ h4{
     margin-top: 20px;
 } 
 
-.teaminfo {
+#team {
     text-align: left;
     margin-bottom: 20px;
 }
@@ -716,58 +704,56 @@ footer.footer a:hover {
     #about {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 40px;
         align-items: center;
-        padding: 20px 30px;
+        padding: 5px 5px;
         background-color: #fbe4aa;
     }
-
-    #about .image1 {
-        grid-column: 1;
-        width: 100%;
+    
+    .aboutcontent{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
-    #about .aboutContent {
+    .aboutcontent h2{
+        padding: 0;
+    }
+
+    .gridservices {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        gap: 20px; /* Spacing between items */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .gridservices > div {
         display: flex;
         flex-direction: column;
-        gap: 1px;
-    }
-
-    #about h2 {
-        font-size: 2.5rem;
-        color: #000;
-        margin: 0;
-    }
-
-    #about p {
-        font-size: 1.2rem;
-        color: #000;
-        margin: 0;
-        padding-bottom: 0;
-    }
-
-    #services {
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
+        align-items: stretch;
+        background-color: #ffe6ac;
+        overflow: hidden;
     }
 
-    .digital, .marketing, .video, .web, .print {
-        width: 48%;
-        margin: 20px 0;
-        display: flex;
-        flex-direction: row;
+    .gridservices img {
+        width: 100%; /* Ensure images span the width of the column */
+        height: auto; /* Maintain aspect ratio */
     }
 
-    .digital img, .marketing img, .video img, .web img, .print img {
-        width: 40%;
-        height: auto;
-    }
-
-    .digitalcontent, .marketingcontent, .videocontent, .webcontent, .printcontent {
-        width: 55%;
+    .gridservices div[class$="content"] {
         padding: 20px;
+        text-align: left;
     }
+
+    .gridservices button {
+        align-self: flex-start; /* Align buttons to the left */
+        margin-top: 20px;
+    }
+
 
     .vision {
         text-align: left;
@@ -776,7 +762,62 @@ footer.footer a:hover {
         max-width: 1000px;
     }
 
-    .teaminfo {
+    .team {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        gap: 20px; /* Space between the grid items */
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 0 20px; /* Optional padding for spacing */
+    }
+
+    .john, .bob {
+        background-color: #ffe6ac;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better separation */
+        display: grid;
+        grid-template-rows: auto 1fr; /* Image at the top and content below */
+    }
+
+    .john img, .bob img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0; /* Rounded corners for the top of the card */
+    }
+
+    .john-content, .bob-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .john-content h3, .bob-content h3 {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin: 15px 0 10px;
+    }
+
+    .john-content h4, .bob-content h4 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .john-content hr, .bob-content hr {
+        border: none;
+        border-top: 2px solid #c78c06;
+        margin: 15px 0;
+    }
+
+    .john-content p, .bob-content p {
+        font-size: 1em;
+        color: #333;
+        line-height: 1.6;
+    }
+
+    /* .teaminfo {
         text-align: center;
     }
 
@@ -796,7 +837,7 @@ footer.footer a:hover {
 
     .john-content, .bob-content {
         width: 70%;
-    }
+    } */
 
     #contact {
         display: flex;
