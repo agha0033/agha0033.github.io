@@ -16,16 +16,11 @@ html, body{
     /* align-items: center; */
     box-sizing: border-box;
     margin: 0 auto;
-    font-family: 'Nunito Sans', sans-serif;
     line-height: 1.6;
     font-size: 18px;
 }
 
 /* header section background */
-header{
-    background-color: #222;
-}
-
 header{
     background-color: #222;
 }
@@ -125,7 +120,7 @@ ul{
 
 #home h1{
     color: white;
-    font-size: 3.75rem;
+    font-size: 5rem;
     font-weight: bold;
     padding: 20px 30px;
 }
@@ -311,7 +306,7 @@ h4{
 }
 
 /* form styling by using box-sizing and spacing */
-form{
+.form{
     box-sizing: border-box;
     border-radius: 1px;
     padding: 4px;
@@ -433,7 +428,6 @@ td{
     html, body{
         margin: 0 auto;
         height: 100%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     /* centering website content with max-width*/
@@ -550,11 +544,11 @@ td{
     /* grid layout for services */
     .gridservices{
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(6, 1fr); /* creates 6 equal-width columns */
+        grid-template-rows: 1fr 1fr; /* creates 2 equal-height rows */
         grid-template-areas: 
-        "one one one two two two"
-        "three three four four five five";
+        "one one one two two two" /* first row: spans three columns for 'one', three for 'two' */
+        "three three four four five five"; /* second row: spans two columns for 'three', 'four', and 'five' */
     }
 
     /* assigns a specific grid area for the first service item in the grid layout */
@@ -563,19 +557,19 @@ td{
     }
 
     .gridservices .services:nth-child(2){
-        grid-area: two;
+        grid-area: two; /* places the second child in the "two" area of the grid */
     }
 
     .gridservices .services:nth-child(3){
-        grid-area: three;
+        grid-area: three; /* places the third child in the "three" area of the grid */
     }
 
     .gridservices .services:nth-child(4){
-        grid-area: four;
+        grid-area: four; /* places the fourth child in the "four" area of the grid */
     }
 
     .gridservices .services:nth-child(5){
-        grid-area: five;
+        grid-area: five; /* places the fifth child in the "five" area of the grid */
     }
 
     .services{
@@ -601,47 +595,52 @@ td{
         margin-bottom: 0;
     }
 
+    /* team section grid layout */
     .teamsection{
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        display: grid; /* enables grid layout */
+        grid-template-rows: 1fr 1fr; /* creates 2 equal-height rows */
+        grid-template-columns: 1fr 1fr; /* creates 2 equal-width columns */
         grid-template-areas: 
-        "one two"
-        "three four";
+        "one two" /* first row: two areas, 'one' and 'two', spanning one column each */
+        "three four"; /* second row: two areas, 'three' and 'four', spanning one column each */
     }
 
+    /* assigns the first team member's picture to a specific grid area */
     .teamsection .picture:nth-child(1){
-        grid-area: one;
+        grid-area: one; /* places the first child in the "one" area of the grid */
     }
 
     .teamsection .picture:nth-child(2){
-        grid-area: two;
+        grid-area: two; /* places the second child in the "two" area of the grid */
     }
 
     .teamsection .picture:nth-child(3){
-        grid-area: four;
+        grid-area: four; /* places the third child in the "four" area of the grid */
     }
 
+    /* contact information grid layout */
     .contactInfo{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
+        display: grid; /* enables grid layout */
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* divides the container into 4 equal-width columns */
+        grid-template-rows: 1fr 0.5fr; /* creates 2 equal-height rows */
+        gap: 10px; /* spacing between grid items */
         grid-template-areas: 
-        "one one two two"
-        "three three three three";
+        "one one two two" /* first row: 'one' spans two columns, 'two' spans the other two */
+        "three three three three"; /* second row: 'three' spans all four columns */
     }
 
+    /* positions the first part of the contact information in a grid area */
     .contactInfo .part1:nth-child(1){
-        grid-area: one;
+        grid-area: one; /* places the first child in the "one" area of the grid */
     }
 
     .contactInfo .part1:nth-child(2){
-        grid-area: three;
+        grid-area: three; /* places the second child in the "three" area of the grid */
+    }
     }
 
     .contactInfo .part1:nth-child(3){
-        grid-area: two;
+        grid-area: two; /* places the third child in the "two" area of the grid */
     }
 
     .footer{
