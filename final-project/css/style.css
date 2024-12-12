@@ -66,8 +66,9 @@ header{
 
 .nav a:hover,
 .nav a:focus {
-    background-color: #c78c06;
-    color: #222;
+    background-color: #000000;
+    color: #c78c06;
+    border: #000000;
     width: 100%;
 }
 
@@ -350,15 +351,6 @@ form button:hover {
     background-color: #e6b82e; /* Slightly darker gold on hover */
 }
 
-.hoursOperation table{
-    width: 95%;
-    margin: 0 auto;
-}
-
-.hoursOperation{
-    margin: 30px 0;
-}
-
 .daystitle{
     border: #222 1px solid;
     width: 50%;
@@ -403,7 +395,9 @@ td{
 
 @media screen and (min-width:760px) {
     * {
-        margin: 0 auto;
+       box-sizing: border-box;
+       margin: 0;
+       padding: 0;
     }
 
     html, body{
@@ -589,7 +583,7 @@ td{
         grid-area: four;
     }
 
-    #contact{
+    .contactInfo{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -612,5 +606,6 @@ td{
     }
 
     .footer{
-        padding-left: 100px;
+        margin: 0;
+        padding: 10px 20px;
     }
