@@ -225,7 +225,7 @@ h4{
     padding: 60px 20px;
 }
 
-.vision button{
+.visionInfo button{
     background-color: #23223a;
     color: white;
     border: 1px solid #c78c06;
@@ -236,89 +236,60 @@ h4{
     margin-top: 20px;
 } 
 
-#team {
+.visionInfo button:hover{
+    background-color: #c78c06;
+    color: #000;
+}
+
+.teamsection{
+    background-color: #ffffff;
+    padding: 20px 20px;
+}
+
+.teamsection div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.teamsection img{
+    width: 100%;
+    max-width: 900px;
+}
+
+.teamsection hr{
+    border: none;
+    border-top: 2px solid #c78c06; /* Subtle gray horizontal line */
+    margin: 15px 20px; /* Add spacing to the horizontal line */
+}
+
+#team h3{
+    display: flex;
+    justify-content: left;
+}
+
+.teamContent{
+    background-color: #ffe6ac;
+    text-align: left;
+    padding: 20px;
     margin: 0 auto;
-    width: 95%;
-    text-align: left;
-    margin-bottom: 20px;
 }
 
-.john{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px auto;
-    width: 90%;
-    background-color: #ffe6ac;
-    padding: 0 auto;
-}
-
-.john h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-top: 15px;
-    padding: 0 20px;
-    text-align: left;
-}
-
-.john h4 {
-    box-sizing: border-box;
-    font-size: 1em;
-    font-weight: bold;
+.teamContent h3{
     margin-bottom: 10px;
-    padding-bottom: 5px;
-}
-
-.john hr {
-    border: none;
-    border-top: 2px solid #c78c06; /* Subtle gray horizontal line */
-    margin: 15px 20px; /* Add spacing to the horizontal line */
-}
-
-.john p {
-    font-size: 0.9em;
-    color: #333; /* Darker gray for readability */
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.bob{
-    display: flex;
-    flex-direction: column;
-    justify-content: cen;
-    margin: 30px auto;
-    width: 90%;
-    background-color: #ffe6ac;
-    padding: 0 auto;
-}
-
-.bob h3 {
-    font-size: 1.5em;
     font-weight: bold;
-    margin-top: 15px;
-    padding: 0 20px;
-    text-align: left;
+    font-size: 1.5rem;
 }
 
-.bob h4 {
-    font-size: 1em;
-    font-weight: bold;
+.teamContent h4{
     margin-bottom: 10px;
-    padding: 0 auto;
-    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
-.bob hr {
-    border: none;
-    border-top: 2px solid #c78c06; /* Subtle gray horizontal line */
-    margin: 15px 20px; /* Add spacing to the horizontal line */
-}
-
-.bob p {
-    font-size: 0.9em;
-    color: #333; /* Darker gray for readability */
-    text-align: left;
-    margin-bottom: 20px;
+.teamContent p{
+    line-height: 1.6;
+    font-size: 0.8rem;
 }
 
 form{
@@ -619,7 +590,7 @@ footer.footer a:hover {
     .gridservices{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas: 
         "one one one two two two"
         "three three four four five five";
@@ -652,4 +623,39 @@ footer.footer a:hover {
     #services{
         padding-left: 100px;
         padding-right: 100px;
+    }
+
+    .vision{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #team{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .teamsection div{
+        margin-bottom: 0;
+    }
+
+    .teamsection{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "one two"
+        "three four";
+    }
+
+    .teamsection .picture:nth-child(1){
+        grid-area: one;
+    }
+
+    .teamsection .picture:nth-child(2){
+        grid-area: two;
+    }
+
+    .teamsection .picture:nth-child(3){
+        grid-area: four;
     }
