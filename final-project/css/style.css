@@ -174,143 +174,43 @@ h4{
     padding-bottom: 0;
 }
 
-.image1{
+.services {
+    background-color: white;
+    color: black;
+    padding: 20px 20px;
+    text-align: center;
+    text-align: left;
+}
+
+.services img {
     width: 100%;
+    display: block;
 }
 
-#services{
-    margin: 0 auto;
-    width: 98%;
-}
-
-#services h2{
-    padding: 30px 0 20px 0;
-}
-
-.digital{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px auto;
-    width: 90%;
-}
-
-.digitalcontent{
+.servicesInfo {
     background-color: #ffe6ac;
-    margin: 0 auto;
     padding: 20px;
     text-align: left;
 }
 
-.digital button{
-    background-color: #000000;
-    color: aliceblue;
+.servicesInfo button {
+    background-color: #222;
+    color: #fff;
     border: none;
     padding: 25px 35px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-top: 20px;
 }
 
-.marketing{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px auto;
-    width: 90%;
+.servicesInfo button:hover {
+    background-color: #c78c06;
+    color: black;
 }
 
-.marketingcontent{
-    background-color: #ffe6ac;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
+.servicesInfo button i {
+    font-size: 2rem;
 }
 
-.marketing button{
-    background-color: #000000;
-    color: aliceblue;
-    border: none;
-    padding: 25px 35px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-.video{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px auto;
-    width: 90%;
-}
-
-.videocontent{
-    background-color: #ffe6ac;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
-
-.videocontent button{
-    background-color: #000000;
-    color: aliceblue;
-    border: none;
-    padding: 25px 35px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-.web{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px auto;
-    width: 90%;
-}
-
-.webcontent{
-    background-color: #ffe6ac;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
-
-.webcontent button{
-    background-color: #000000;
-    color: aliceblue;
-    border: none;
-    padding: 25px 35px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-.print{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 30px auto;
-    width: 90%;
-}
-
-.printcontent{
-    background-color: #ffe6ac;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-}
-
-.printcontent button{
-    background-color: #000000;
-    color: aliceblue;
-    border: none;
-    padding: 25px 35px;
-    font-size: 1.5rem;
-    margin-top: 20px;
-}
-
-.services button:hover{
-    background-color: #000;
-    color: #c78c06;
-}
 
 .vision{
     background-image: url(../images/vision.jpg); /* Add the path to your image */
